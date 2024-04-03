@@ -3,7 +3,7 @@
 import clsx from 'clsx';
 import React, { ButtonHTMLAttributes } from 'react';
 import _ from 'lodash';
-import { Button, Center } from '@/ui/components';
+import { Button, Center } from '@/app/ui/components';
 
 enum Color {
     PINK = 'pink',
