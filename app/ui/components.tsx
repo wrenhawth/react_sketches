@@ -11,3 +11,8 @@ export function Center({ className, children }: { children: React.ReactNode | Re
     const cls = clsx(className, 'flex flex-auto justify-center items-center')
     return <div className={cls}>{children}</div>
 }
+
+export function Container({ className, children }: { children: React.ReactNode | React.ReactNode[], className?: string }) {
+    const cls = clsx(className, 'container flex min-h-screen flex-col justify-between items-center')
+    return <div className={cls}>{children}</div>
+}

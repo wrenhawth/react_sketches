@@ -31,3 +31,7 @@ body {
     text-wrap: balance;
   }
 }
+
+.triangle {
+  clip-path: polygon(0% 100%, 50% 0%, 100% 100%)
+}

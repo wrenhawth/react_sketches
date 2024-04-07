@@ -1,9 +1,9 @@
 "use client"
 
 import clsx from 'clsx';
-import React, { ButtonHTMLAttributes } from 'react';
+import React from 'react';
 import _ from 'lodash';
-import { Button, Center } from '@/app/ui/components';
+import { Button, Center, Container } from '@/app/ui/components';
 
 enum Color {
     PINK = 'pink',
@@ -54,7 +54,7 @@ export default function Multiplication() {
     const bRange = _.range(1, termB + 1)
     const bothNumbers = !Number.isNaN(termA) && !Number.isNaN(termB)
     return (
-        <div className='container flex min-h-screen flex-col justify-between items-center p-24'>
+        <Container>
             <div className="w-3/4 items-center bg-">
                 <h1 className='text-5xl'>Multiplication 🐈🐈‍⬛ </h1>
                 <div className='w-full pt-5'>
@@ -129,6 +129,6 @@ export default function Multiplication() {
                     }>Reset</Button>
                 </div>
             </div>
-        </div>
+        </Container>
     )
 }
