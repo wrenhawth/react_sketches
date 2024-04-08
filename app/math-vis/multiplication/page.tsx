@@ -60,7 +60,7 @@ export default function Multiplication() {
                 <div className='w-full pt-5'>
                     <div className="flex flex-auto justify-between flex-row">
                         <div className="w-full flex flex-auto justify-around">
-                            <p className="text-3xl">What's</p>
+                            <p className="text-3xl">What&apos;s</p>
                             <TermInput color={Color.PINK} name="termA" value={termA} onChange={(e) => setTermA(Number.parseInt(e.currentTarget.value))} />
                             <p className="text-3xl">X</p>
                             <TermInput color={Color.PURPLE} name="termB" value={termB} onChange={(e) => setTermB(Number.parseInt(e.currentTarget.value))} />
@@ -70,7 +70,7 @@ export default function Multiplication() {
                     </div>
                 </div>
                 {bothNumbers && <div className='flex flex-auto justify-around items-center pt-6'>
-                    <p>It's <span className="text-2xl mx-2 text-pink-500">{termA}</span> {termA == 1 ? 'group' : 'groups'} of <span className="text-2xl mx-2 text-purple-500">{termB}</span></p>
+                    <p>It&apos;s <span className="text-2xl mx-2 text-pink-500">{termA}</span> {termA == 1 ? 'group' : 'groups'} of <span className="text-2xl mx-2 text-purple-500">{termB}</span></p>
                 </div>
                 }
                 {!showAddition && <Center className='pt-6'><Button onClick={() => setShowAddition(true)}>How do I figure that out?</Button></Center>}
@@ -100,7 +100,7 @@ export default function Multiplication() {
                         </div>
                     </div>
                 }
-                {!showDots && <Center className='pt-6'><Button onClick={() => setShowDots(true)}>What's that look like?</Button></Center>}
+                {!showDots && <Center className='pt-6'><Button onClick={() => setShowDots(true)}>What&apos;s that look like?</Button></Center>}
 
                 {bothNumbers && showDots && (
                     <div className='pt-4'>
