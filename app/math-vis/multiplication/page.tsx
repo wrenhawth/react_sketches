@@ -39,6 +39,8 @@ function TermInput({ name, value, onChange, color }: { name: string, value: numb
         aria-label={name}
         value={value}
         type="number"
+        inputMode='numeric'
+        step={1}
         name={name}
     />
 }
@@ -55,7 +57,7 @@ export default function Multiplication() {
     const bothNumbers = !Number.isNaN(termA) && !Number.isNaN(termB)
     return (
         <Container>
-            <div className="w-3/4 items-center bg-">
+            <div className="items-center">
                 <h1 className='text-5xl'>Multiplication 🐈🐈‍⬛ </h1>
                 <div className='w-full pt-5'>
                     <div className="flex flex-auto justify-between flex-row">

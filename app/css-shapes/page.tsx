@@ -5,7 +5,7 @@ import clsx from "clsx";
 export default function CssShapes() {
     return (
         <Container>
-            <div className="w-3/4 items-center">
+            <div className="grid justify-start items-start">
 
                 <h1 className='text-5xl'>CSS Shapes </h1>
                 <div className="grid grid-cols-4 items-center justify-center">

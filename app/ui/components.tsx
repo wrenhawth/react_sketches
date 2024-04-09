@@ -12,7 +12,16 @@ export function Center({ className, children }: { children: React.ReactNode | Re
     return <div className={cls}>{children}</div>
 }
 
-export function Container({ className, children }: { children: React.ReactNode | React.ReactNode[], className?: string }) {
-    const cls = clsx(className, 'container flex min-h-screen flex-col justify-between items-center')
-    return <div className={cls}>{children}</div>
+type ContainerProps = { 
+    children: React.ReactNode | React.ReactNode[], 
+    className?: string 
+}
+
+export function Container({ className, children }: ContainerProps) {
+    const cls = clsx(className, 'grid grid-cols-full-bleed min-h-screen justify-items-center justify-between items-center')
+    return <div className={cls}>
+        <div className='col-start-2'>
+        {children}
+        </div>
+    </div>
 }

@@ -16,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en"> 
-      <body className={`flex min-h-screen  bg-gradient-to-tr from-indigo-50 to-sky-200 via-indigo-100 via-30% flex-col items-center justify-between p-24 ${inter.className}`}>{children}</body>
+      <body className={`min-h-screen  bg-gradient-to-tr from-indigo-50 to-sky-200 via-indigo-100 via-30% ${inter.className}`}>{children}</body>
     </html>
   );
 }
