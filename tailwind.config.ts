@@ -15,7 +15,7 @@ const config: Config = {
       },
       gridTemplateColumns: {
         '20': 'repeat(20, minmax(0, 1fr))',
-        'full-bleed': '1fr min(70ch, 100%) 1fr'
+        'full-bleed': '1fr min(70ch, calc(100% - 64px)) 1fr'
       }
     },
   },
