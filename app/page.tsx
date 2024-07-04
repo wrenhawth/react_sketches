@@ -29,6 +29,11 @@ const HOME_LINKS: NavTileProps[] = [
     title: 'MultipliCATion',
     path: 'math-vis/multiplication',
     description: 'A math visualization to help teach my daughter multiplication using 🐱 cats 🐱'
+  },  
+  {
+    title: 'HSL Palettes',
+    path: 'hsl-palettes',
+    description: 'Tool for generating evenly spaced HSL values for color palettes'
   },
   {
     title: 'ToDone',
